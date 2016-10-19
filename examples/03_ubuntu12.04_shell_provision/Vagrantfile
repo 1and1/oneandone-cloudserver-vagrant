@@ -1,0 +1,19 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure('2') do |config|
+  config.vm.hostname = 'ubuntu1204-server-example'
+  config.vm.box = 'dummy'
+  config.ssh.private_key_path = '~/.ssh/id_rsa'
+  config.ssh.pty = true
+
+  config.vm.provider :oneandone do |oneandone|
+    oneandone.appliance  = 'ubuntu1204-64std'
+    oneandone.datacenter = 'ES' # Spain
+    oneandone.fixed_size = 'S'
+  end
+
+  config.vm.provision 'shell' do |s|
+    s.inline = 'apt-get update && apt-get install -y'
+  end
+end

@@ -1,0 +1,124 @@
+en:
+  vagrant_1and1:
+    already_created: |-
+      The server is already created.
+    already_stopped: |-
+      The server is already stopped.
+    finding_fixed_instance_size: |-
+      Finding fixed instance size for the server...
+    finding_appliance: |-
+      Finding appliance for the server...
+    finding_datacenter: |-
+      Finding data center for the server...
+    finding_public_ip: |-
+      Finding unassigned public IP address...
+    creating_server: |-
+      Creating server...
+    reloading_server: |-
+      Restarting the server...
+    server_deleted: |-
+      The server has been destroyed.
+    starting_server: |-
+      Starting the server...
+    stopping_server: |-
+      Stopping the server...
+    powered_off: |-
+      The server has been stopped.
+    rebooted: |-
+      The server has been rebooted.
+    powered_on: |-
+      The server is up and running.
+    not_created: |-
+      The server hasn't been created yet. Run `vagrant up` first.
+    ready: |-
+      The server is ready!
+    rsync_folder: |-
+      Rsyncing folder: %{hostpath} => %{guestpath}
+    wait_deleting_server: |-
+      Waiting until the server is deleted...
+      
+    command:
+      available_subcommands: |-
+        Available subcommands:
+      help_subcommands: |-
+        For help on any subcommand run
+      list_appliances: |-
+        List available 1&1 server appliances.
+      list_datacenters: |-
+        List 1&1 data centers.
+      list_firewalls: |-
+        List available 1&1 firewall policies.
+      list_load_balancers: |-
+        List available 1&1 load balancers.
+      list_monitor_policies: |-
+        List available 1&1 monitoring policies.
+      list_public_ips: |-
+        List available 1&1 public IPs.
+      list_servers: |-
+        List available 1&1 servers.
+      list_sizes: |-
+        List available fixed-server sizes.
+      synopsis: |-
+        oneandone provider specific commands
+      
+    config:
+      api_key_required: |-
+        1&1 API key is required.
+      private_key: |-
+        "Private key path is required."
+      public_key: |-
+        "Public key not found: %{key}."
+
+    errors:
+      could_not_delete: |-
+        The server could not be deleted.
+      instance_not_found: |-
+        Vagrant was unable to find the 1&1 server used for your vagrant machine.
+        It might be already deleted.
+      ip_address_already_in_use: |-
+        The specified IP address is already assigned to another entity.
+      missing_api_key: |-
+        1&1 API key not found. Use either ONEANDONE_API_KEY environment 
+        variable or specify the key in the command line. See the command help.
+      no_matching_fixed_size: |-
+        No matching fixed-instance size was found! Please check your server size
+        setting.
+      no_matching_appliance: |-
+        No matching server appliance was found! Please check your server appliance
+        setting to make sure you have specified a valid server appliance.
+      no_matching_datacenter: |-
+        No matching data center was found! Please check your data center
+        setting to make sure you have specified a valid data center.
+      no_matching_public_ip: |-
+        No matching public IP was found! Please specify a valid public IP address.  
+      ssh_key_not_found: |-
+        SSH key inaccesible or not found: %{key}. Make sure you have specified a valid path.
+      rsync_error: |-
+        There was an error when attemping to rsync a share folder.
+        Please inspect the error message below for more info.
+
+        Host path: %{hostpath}
+        Guest path: %{guestpath}
+        Error: %{stderr}
+      unsupported_appliance: |-
+        1&1 vagrant plugin currently supports only Linux OS appliances.
+
+    states:
+      short_active: |-
+        active
+      long_active: |-
+        The server is up and running. Run `vagrant ssh` to access it.
+      short_deploying: |-
+        deploying
+      long_deploying: |-
+        The server is currently being deployed. You must wait for this to 
+        complete before you can access or delete it.
+      short_not_created: |-
+        not created
+      long_not_created: |-
+        The server is not created. Run `vagrant up` to create it.
+      short_off: |-
+        off
+      long_off: |-
+        The server is powered off. Run `vagrant up` to start it.
+        
