@@ -1,0 +1,17 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure('2') do |config|
+  config.vm.box = 'dummy'
+  config.ssh.private_key_path = '~/.ssh/id_rsa'
+
+  config.vm.provider :oneandone do |oneandone|
+    oneandone.name       = 'debian8-docker'
+    oneandone.appliance  = 'debian8-64std'
+    oneandone.datacenter = 'GB' # United Kingdom
+    oneandone.fixed_size = 'XL'
+  end
+
+  config.vm.provision 'docker' do |d|
+  end
+end
