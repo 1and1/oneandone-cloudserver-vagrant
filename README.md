@@ -1,6 +1,6 @@
 # Vagrant OneAndOne Cloud Provider
 
-[![Build Status](https://travis-ci.org/StackPointCloud/oneandone-cloudserver-vagrant.svg?branch=master)](https://travis-ci.org/StackPointCloud/oneandone-cloudserver-vagrant)
+[![Build Status](https://travis-ci.org/1and1/oneandone-cloudserver-vagrant.svg?branch=master)](https://travis-ci.org/1and1/oneandone-cloudserver-vagrant)
 
 ## Table of Contents
 
@@ -271,3 +271,5 @@ Before you send a pull request, make sure you have successfully run the function
 tests as well.
 
     $ rake spec:acceptance
+
+Refer to [the test documentation](spec/doc/) for more information on the plugin testing.
