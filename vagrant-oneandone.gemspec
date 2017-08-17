@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.license       = 'Apache-2.0'
 
   spec.add_runtime_dependency 'fog-oneandone'
-  spec.add_runtime_dependency 'i18n', '~> 0.6.0'
+  spec.add_runtime_dependency 'i18n', '>= 0.6.0'
   spec.add_runtime_dependency 'terminal-table', '~> 1.7.2'
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
