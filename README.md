@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/1and1/oneandone-cloudserver-vagrant.svg?branch=master)](https://travis-ci.org/1and1/oneandone-cloudserver-vagrant)
 
+For more information on the Vagrant OneAndOne Cloud Provider see the [1&1 Community Portal](https://www.1and1.com/cloud-community/).
+
 ## Table of Contents
 
 * [Introduction](#introduction)
