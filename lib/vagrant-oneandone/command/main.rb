@@ -17,6 +17,10 @@ module VagrantPlugins
             require File.expand_path('../list_appliances', __FILE__)
             ListAppliances
           end
+          @subcommands.register(:blockstorages) do
+            require File.expand_path('../list_block_storages', __FILE__)
+            ListBlockStorages
+          end
           @subcommands.register(:datacenters) do
             require File.expand_path('../list_datacenters', __FILE__)
             ListDatacenters
@@ -44,6 +48,10 @@ module VagrantPlugins
           @subcommands.register(:sizes) do
             require File.expand_path('../list_sizes', __FILE__)
             ListSizes
+          end
+          @subcommands.register(:sshkeys) do
+            require File.expand_path('../list_ssh_keys', __FILE__)
+            ListSshKeys
           end
 
           super(argv, env)
