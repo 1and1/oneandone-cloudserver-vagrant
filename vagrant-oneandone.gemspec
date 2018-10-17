@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/1and1/oneandone-cloudserver-vagrant'
   spec.license       = 'Apache-2.0'
 
-  spec.add_runtime_dependency 'fog-oneandone'
+  spec.add_runtime_dependency 'fog-oneandone', '>= 1.1'
   spec.add_runtime_dependency 'i18n', '>= 0.6.0'
   spec.add_runtime_dependency 'terminal-table', '~> 1.7.2'
 
@@ -25,5 +25,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler', '~> 1.12'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 2.14'
-  spec.add_development_dependency 'rubocop', '~> 0.39'
+  spec.add_development_dependency 'rubocop', '~> 0.59.1'
 end
