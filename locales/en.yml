@@ -44,6 +44,8 @@ en:
         For help on any subcommand run
       list_appliances: |-
         List available 1&1 server appliances.
+      list_block_storages: |-
+        List 1&1 block storages.
       list_datacenters: |-
         List 1&1 data centers.
       list_firewalls: |-
@@ -58,6 +60,8 @@ en:
         List available 1&1 servers.
       list_sizes: |-
         List available fixed-server sizes.
+      list_ssh_keys: |-
+        List available 1&1 SSH keys.
       synopsis: |-
         oneandone provider specific commands
       

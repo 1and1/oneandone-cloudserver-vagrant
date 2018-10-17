@@ -119,6 +119,7 @@ Usage: vagrant oneandone <subcommand> [<api_key>]
 
 Available subcommands:
      appliances
+     blockstorages
      datacenters
      firewalls
      ips
@@ -126,6 +127,7 @@ Available subcommands:
      monitors
      servers
      sizes
+     sshkeys
 
 For help on any subcommand run `vagrant oneandone <subcommand> -h`
 ```

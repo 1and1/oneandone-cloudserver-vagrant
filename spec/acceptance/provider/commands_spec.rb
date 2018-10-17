@@ -8,6 +8,10 @@ shared_examples 'provider/commands' do |_provider, _options|
       expect(result).to exit_with(0)
       expect(result.stdout).to match(/ubuntu1604-64std/)
 
+      status('Test: listing block storages')
+      result = execute('vagrant', 'oneandone', 'blockstorages')
+      expect(result).to exit_with(0)
+
       status('Test: listing data centers')
       result = execute('vagrant', 'oneandone', 'datacenters')
       expect(result).to exit_with(0)
@@ -42,6 +46,10 @@ shared_examples 'provider/commands' do |_provider, _options|
       result = execute('vagrant', 'oneandone', 'sizes')
       expect(result).to exit_with(0)
       expect(result.stdout).to match(/5XL/)
+
+      status('Test: listing SSH keys')
+      result = execute('vagrant', 'oneandone', 'sshkeys')
+      expect(result).to exit_with(0)
     end
   end
 end
